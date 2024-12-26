@@ -1,0 +1,193 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body dan background umum */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header dengan background gambar */
+header {
+    background-image: url('header-tkj.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: #15f5fff7;
+}
+
+header .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header .nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+header .nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header .nav-links a {
+    color: #fff100f7;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header .hero {
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+header .btn-cta {
+    display: inline-block;
+    background-color: #0288d1;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+header .btn-cta:hover {
+    background-color: #01579b;
+}
+
+/* Section */
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Profile Card */
+.profile-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 350px;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Daftar Guru */
+.teacher-list {
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.teacher-list li {
+    background: #f8f9fa;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Galeri Gambar */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    align-items: stretch; /* Pastikan semua elemen sejajar vertikal */
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Gambar Kelas 1 */
+.gallery-item.big {
+    grid-column: span 2; /* Membuat gambar besar mengambil dua kolom */
+}
+
+.gallery-item.big img {
+    object-fit: cover; /* Membuat gambar tetap proporsional */
+    max-height: 450px; /* Membatasi tinggi maksimum untuk gambar besar */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer dengan background */
+footer {
+    background-color: #0288d1;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.1em;
+}
